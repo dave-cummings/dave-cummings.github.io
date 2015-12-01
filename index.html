@@ -1,1 +1,436 @@
-<h1>Welcome</h1>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta name="description" content="">
+        <meta name="keywords" content="David Cummings, Dave Cummings, Front-End Web Development Manager, Front-End Web Developer/Engineer, Web Developer, Austin TX, Portfolio, CSS/HTML Developer, JavaScript, SEO, Accessibility, Design">
+        <title>David Cummings</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="json.css">
+    </head>
+    <body>
+        <script>
+            window.onload = function () {
+            var toggleFloatingMenu = function() {
+            $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+            $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+            };
+            
+            $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+            $( "[rel=tooltip]" ).tooltip();
+            $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+            e.preventDefault();
+            toggleFloatingMenu();
+            });
+            $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+            }
+        </script>
+        <div class="container-fluid">
+            <div class="row main clearfix">
+                <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+                <i class="fa fa-bars"></i>
+                <span class="close-icon">×</span>
+                </a>
+                <nav class="floating-nav js-floating-nav">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#about">
+                            <i class="fa fa-user"></i>
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#work-experience">
+                            <i class="fa fa-building"></i>
+                            Work Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills">
+                            <i class="fa fa-code"></i>
+                            Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education">
+                            <i class="fa fa-mortar-board"></i>
+                            Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#awards">
+                            <i class="fa fa-trophy"></i>
+                            Awards
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+                    <div class="card profile-card">
+                        <span class="profile-pic-container">
+                            <div class="profile-pic">
+                                <img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="David Cummings" src="dave-cummings.jpg" itemprop="image">
+                            </div>
+                            <div class="name-and-profession">
+                                <h3 class="text-center text-bolder name" itemprop="name"> David Cummings</h3>
+                                <h5 class="text-muted text-center" itemprop="jobTitle">Front-End Web Development Manager</h5>
+                            </div>
+                        </span>
+                        <hr>
+                        <div class="contact-details clearfix">
+                            <div class="detail">
+                                <span class="icon">
+                                <i class="fa fa-lg fa-location-arrow"></i>
+                                </span>
+                                <span class="info">
+                                Austin, Texas, USA
+                                </span>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+                                <i class="fa fa-lg fa-phone"></i>
+                                </span>
+                                <span class="info" itemprop="telephone">
+                                (512) 699-0346
+                                </span>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+                                <i class="fa fa-lg fa-envelope"></i>
+                                </span>
+                                <span class="info">
+                                    <a href="/cdn-cgi/l/email-protection#026663746b667561776f6f6b6c657142656f636b6e2c616d6f" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="492d283f202d3e2a3c242420272e3a092e24282025672a2624">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
+									/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
+                                </span>
+                            </div>
+                            <div class="detail">
+                                <span class="icon">
+                                <i class="fa fa-lg fa-link"></i>
+                                </span>
+                                <span class="info">
+                                <a href="http://dave-cummings.github.io/" target="_blank">http://dave-cummings.github.io/</a>
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="social-links text-center">
+                            <a class="fa fa-linkedin fa-2x social-link link-linkedin" href="https://www.linkedin.com/in/david-cummings-35191612
+" target="_blank"></a>
+                            <a class="fa fa-github fa-2x social-link link-github" href="https://github.com/dave-cummings" target="_blank"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-9 card-wrapper pull-right">
+                    <div class="card background-card">
+                        <h4 class="text-uppercase text-bolder">Background</h4>
+                        <hr>
+                        <div class="background-details">
+                            <div class="detail" id="about">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-user"></i>
+                                    <span class="mobile-title">About</span>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        About
+                                    </h4>
+                                    <div class="content" itemprop="description">
+                                        I'm a front-end web developer who loves building thoughtful clean user experiences for the web.  In recent years I’ve been honored to help others fulfill their dreams of opening successful online businesses.  I truly enjoy collaborating with other developers and building teams based of individual strengths.  I also have a deep understanding of responsive web design and the technical considerations involved in creating quality mobile user experiences. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail" id="work-experience">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-building"></i>
+                                    <span class="mobile-title">Work Experience</span>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Work Experience
+                                    </h4>
+                                    <ul class="list-unstyled">
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <i class="fa fa-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
+                                                    <strong>Front-End Web Development Manager</strong>,&nbsp;
+                                                    <a href="http://volusion.com" target="_blank">Volusion</a>
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    Jan, 2012 -
+                                                    Present
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    3 year
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Senior Front-End Web Developer</strong>,&nbsp;
+                                                    <a href="http://www.volusion.com/" target="_blank">Volusion</a>
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    Jun, 2011 -
+                                                    Jan, 2012
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    8 Months
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.</p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Front-End Web Developer</strong>,&nbsp;
+                                                    <a href="http://www.volusion.com/" target="_blank">Volusion</a>
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    Jun, 2009 -
+                                                    Jun, 2011
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    2 years
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Worked on the design services team building custom e-commerce templates on the Volusion platform.</p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Web Publisher</strong>,&nbsp;
+                                                    <a href="https://us.dimensional.com/" target="_blank">Dimensional Fund Advisors</a>
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    Jan, 2008 -
+                                                    Jan, 2009
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    1 years
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.</p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Church Planter</strong>,&nbsp;
+                                                    <a href="http://omf.org/" target="_blank">OMF International</a>
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    2006 -
+                                                    2008
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    2 year
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.</p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Freelance Web Developer
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    2003 -
+                                                    2005
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    2 years
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.</p>
+                                            </div>
+                                        </li>
+                                        <li class="card card-nested clearfix">
+                                            <div class="content">
+                                                <p class="clear-margin relative">
+                                                    <strong>Web &amp; Graphic Design Intern</strong>,&nbsp;
+                                                    eDesign
+                                                </p>
+                                                <p class="text-muted">
+                                                    <small>
+                                                    <span class="space-right">
+                                                    2002 -
+                                                    2003
+                                                    </span>
+                                                    <span>
+                                                    <i class="fa fa-clock-o icon-left"></i>
+                                                    1 years
+                                                    </span>
+                                                    </small>
+                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet neque nec massa auctor, sed mollis felis aliquet. Sed tincidunt tincidunt ligula, nec sagittis mauris venenatis id. Suspendisse rhoncus congue velit, aliquet iaculis ipsum rutrum vitae. Donec nec purus in sapien consectetur porta. Morbi porttitor neque quis posuere convallis.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="detail" id="skills">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-code"></i>
+                                    <span class="mobile-title">Skills</span>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Skills
+                                    </h4>
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            <li class="card card-nested card-skills">
+                                                <div class="skill-info">
+                                                    <strong>Web Development</strong>
+                                                    <div class="space-top labels">
+                                                        <span class="label label-keyword">HTML</span>
+                                                        <span class="label label-keyword">CSS</span>
+                                                        <span class="label label-keyword">LESS</span>
+                                                        <span class="label label-keyword">SASS</span>
+                                                        <span class="label label-keyword">Bootstrap</span>
+                                                        <span class="label label-keyword">Javascript</span>
+                                                        <span class="label label-keyword">Angular.js</span>
+                                                        <span class="label label-keyword">Backbone.js</span>
+                                                        <span class="label label-keyword">jQuery</span>
+                                                        <span class="label label-keyword">AJAX</span>
+                                                        <span class="label label-keyword">PHP</span>
+                                                        <span class="label label-keyword">MSSQL/MySQL</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail" id="education">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-mortar-board"></i>
+                                    <span class="mobile-title">Education</span>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Education
+                                    </h4>
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            <li class="card card-nested">
+                                                <div class="content">
+                                                    <p class="clear-margin relative">
+                                                        <strong>Salem State University</strong>,&nbsp;
+                                                        Web Design, Web Development
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        <small>
+                                                        2003 -
+                                                        2005
+                                                        </small>
+                                                    </p>
+                                                    <!-- <i></i>
+                                                    <div class="space-top labels">
+                                                        <span class="label label-keyword">Intro to Software Engineering (Java)</span>
+                                                        <span class="label label-keyword">Object Oriented Java</span>
+                                                        <span class="label label-keyword">Object Oriented C++</span>
+                                                        <span class="label label-keyword">JSP/PHP Development</span>
+                                                        <span class="label label-keyword">Intro to Web Development</span>
+                                                        <span class="label label-keyword">Data Structures (Java)</span>
+                                                        <span class="label label-keyword">Database Administration</span>
+                                                        <span class="label label-keyword">Mobile Development (Java, Android)</span>
+                                                        <span class="label label-keyword">Visual Basic Programming</span>
+                                                        <span class="label label-keyword">Networking Concepts</span>
+                                                    </div> -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail" id="awards">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-trophy"></i>
+                                    <span class="mobile-title">Awards</span>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Awards
+                                    </h4>
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            <li class="card card-nested">
+                                                <!-- <div class="content">
+                                                    <p class="clear-margin" itemprop="award">
+                                                        <strong>AT&amp;T Mobile App Hackathon Winner</strong>,&nbsp;
+                                                        AT&amp;T
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        <small>
+                                                        Awarded on: Apr 01, 2013
+                                                        </small>
+                                                    </p>
+                                                    <p class="clear-margin"> My co-worker and I won 1st place at the AT&amp;T Mobile App Hackathon At IBM Impact 2013. We developed a cross platform location based social app using the IBM Worklight Platform and AT&amp;T API’s like text-to-speech, speech-to-text, and advertising. </p>
+                                                </div> -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            (function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+            /* ]]> */
+        </script>
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-70415075-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+    </body>
+</html>
