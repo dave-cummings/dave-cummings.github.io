@@ -1,0 +1,84 @@
+@media print {
+    /* remove any screen only styles, for example link underline */
+}
+
+@page {
+    padding: 0;
+    margin: 0cm;
+    size: A4 portrait;
+}
+
+.resume {
+    /* for development only */
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid black;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "photo"
+        "name"
+        "about"
+        "work"
+        "education"
+        "skills"
+        "community"
+        "references"
+}
+
+@media (min-width: 900px) {
+    .resume {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "name photo"
+            "about about"
+            "work work"
+            "education education"
+            "skills skills"
+            "community community"
+            "references references"
+    }
+}
+
+@media (min-width: 1200px) {
+    .resume {
+        grid-template-areas:
+            "name photo"
+            "work about"
+            "work skills"
+            "community education";
+    }
+}
+
+.name {
+    grid-area: name;
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.about {
+    grid-area: about;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.community {
+    grid-area: community;
+}
+
+.skills {
+    grid-area: skills;
+}
